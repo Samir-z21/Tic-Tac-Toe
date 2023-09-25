@@ -7,10 +7,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tic-Tac-Toe</title>
         <link rel="stylesheet" href="./style.css">
-        <script src="./script.js"></script>
+        <script src="./script.js" defer></script>
     </head>
 
     <body>
+        <div class="title-div">
+            <h1 class="title">Tic-Tac-Toe</h1>
+        </div>
+
+      <form>
+        <div class="form-container">
+            <div class="playerInputs">
+                <div class="playerOne">
+                    <label for="P1">Player 1</label>
+                    <input type="text" id="P1" placeholder="Enter Name" required>
+                </div>
+
+                <div class="playerTwo">
+                    <label for="P2">Player 2</label>
+                    <input type="text" id="P2" placeholder="Enter Name" required>
+                </div>
+            </div>
+            <button type="submit" class="start-game">Start Game</button>
+        </div>
+      </form>
         
+        <div id="t-container">
+            <div id="tBox" class="0"></div>
+            <div id="tBox" class="1"></div>
+            <div id="tBox" class="2"></div>
+            <div id="tBox" class="3"></div>
+            <div id="tBox" class="4"></div>
+            <div id="tBox" class="5"></div>
+            <div id="tBox" class="6"></div>
+            <div id="tBox" class="7"></div>
+            <div id="tBox" class="8"></div>
+        </div>
     </body>
 </html>

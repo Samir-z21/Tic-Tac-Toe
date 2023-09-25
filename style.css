@@ -1,3 +1,70 @@
-* {
-    background-color: aqua;
+body {
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(197,195,198);
+}
+
+.title-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(76,92,104);
+    border-bottom: 3px solid black;
+    height: 150px;
+}
+
+.title {
+    color: rgb(176,228,219);
+    font-size: 80px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form button {
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    background-color: rgb(76,92,104);
+    color: rgb(176,228,219);
+    
+}
+
+.playerInputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    height: 100px;
+}
+
+.playerOne,
+.playerTwo {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+input {
+    height: 25px;
+}
+
+
+
+
+
+/*dinamic*/
+.player-turn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    font-size: 50px;
+    color: rgb(90,92,94);
 }
