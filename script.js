@@ -39,20 +39,26 @@ function Player () {
         container.appendChild(playerDisplay);
         container.appendChild(board);
         
-        squareArray.forEach(square => {
+        let markerArray = [];
+
+        squareArray.forEach((square, index) => {
+            markerArray.push(square.textContent)
             square.addEventListener('click', () => {
         if (currentPlayer === 1 & square.textContent === "") {
             square.textContent = "X";
+            markerArray.splice(index, 1, squareArray[index].textContent);
             currentPlayer = 2;
             currentPlayerName = playerOName;
-            playerDisplay.textContent = `It's ${currentPlayerName}'s turn`
-            
-            
-            } else if ( currentPlayer === 2 & square.textContent === "") {
-                square.textContent = "O";
-                currentPlayer = 1;
-                currentPlayerName = playerXName;
-                playerDisplay.textContent = `It's ${currentPlayerName}'s turn`
+            playerDisplay.textContent = `It's ${currentPlayerName}'s turn`;
+            console.log(markerArray);
+
+        } else if ( currentPlayer === 2 & square.textContent === "") {
+            square.textContent = "O";
+            markerArray.splice(index, 1, squareArray[index].textContent);
+            currentPlayer = 1;
+            currentPlayerName = playerXName;
+            playerDisplay.textContent = `It's ${currentPlayerName}'s turn`;
+            console.log(markerArray);
             }
         })
         });
