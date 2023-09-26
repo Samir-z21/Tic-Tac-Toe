@@ -21,6 +21,7 @@ body {
 }
 
 form {
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,7 +29,7 @@ form {
 }
 
 form button {
-    width: 100px;
+    width: 150px;
     height: 40px;
     font-size: 15px;
     background-color: rgb(76,92,104);
@@ -40,8 +41,8 @@ form button {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 200px;
-    height: 100px;
+    gap: 150px;
+    height: 150px;
 }
 
 .playerOne,
@@ -57,7 +58,43 @@ input {
 
 
 
+/*GameBoard*/
 
+#board-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+.playerDisplay {
+    font-size: 75px;
+    color: rgb(70,73,75);
+}
+
+.board {
+    display: grid;
+    grid-template: 150px 150px 150px / 150px 150px 150px;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    background-color: white;
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+}
+
+.square:hover {
+    background-color:#d8e4e9;
+    cursor: pointer;
+}
 
 /*dinamic*/
 .player-turn {
