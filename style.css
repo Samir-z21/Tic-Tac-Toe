@@ -35,7 +35,7 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 65vh;
     
 }
 
@@ -90,21 +90,22 @@ form button {
     flex-direction: column;
     justify-content: center;
     align-items: center;   
+    margin-top: 20px;
 }
 
 .twoBtnContainer {
     display: flex;
     justify-content: space-around;
     width: 490px;
-    margin-top: 30px;
+    margin-top: 50px;
     
 }
 
 .restartBtn,
 .changePlayers {
-    width: 170px;
-    height: 35px;
-    font-size: 17px;
+    width: 180px;
+    height: 40px;
+    font-size: 18px;
     background-color: rgb(76,92,104);
     color: rgb(176,228,219);
     border: none;
